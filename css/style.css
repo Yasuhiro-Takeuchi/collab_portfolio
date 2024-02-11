@@ -1,0 +1,304 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+
+/* ヘッダー ---------------------------------------*/
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header>.container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  max-width: 1080px;
+  padding: 0;
+}
+
+/* ロゴ -------------------------------------------*/
+.area_logo_header .logo {
+  display: block;
+}
+.area_logo_header img {
+  height: 40px;
+  vertical-align: bottom;
+}
+.area_logo_header a:hover{
+  opacity:0.5;
+	transition:0.3s;
+}
+
+/* ヘッダーナビ -------------------------------------------*/
+.nav_header {
+  margin: 0 0 0 auto;
+}
+.list_nav_header {
+  display: flex;
+  align-items: center;
+  /* margin: 0 -15px; */
+  margin: 0;
+}
+.list_nav_header>li {
+  padding: 0 15px;
+}
+.list_nav_header a {
+  color: #474747;
+  font: 400 20px/1em "futura-pt", 'noto sans japanese', sans-serif;
+}
+.list_nav_header a:hover{ 
+	opacity:0.5;
+	transition:0.3s;
+}
+
+
+
+
+
+/* TOP----------------------------------------- */
+.area_top_view {
+  background: url(../images/top_BG.jpg) no-repeat bottom center;
+  background-size: cover;
+}
+
+.area_top_view>.container {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.area_top_view img {
+  text-align: left;
+  height: 75px;
+  vertical-align: bottom;
+}
+
+.area_top_view .dai {
+  /* text-align: left; */
+  /* width: 2000px; */
+  /* height: 70px; */
+  /* left: 1000px; */
+  margin-left: -210px;
+  vertical-align: bottom;
+}
+
+/* サブキャッチコピーの大きさ */
+.area_top_view .syou {
+  /* text-align: left; */
+  /* width: 30%; */
+  margin-left: -410px;
+  padding: 50px 0 0 0px;
+  width: 320px;
+  /* height: 100%; */
+  vertical-align: bottom;
+}
+
+.area_top_view .ttl {
+  color: #474747;
+  font: 200 13px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  letter-spacing: .04em;
+  max-width: 1080px;
+  margin: 20px 170px;
+  /* margin: 0px 0; */
+  /* padding: 0 0 0 40px; */
+  padding: 0 0 0 0px;
+  position: relative;
+}
+
+.area_top_view p {
+  line-height: 175%;
+}
+
+/* エリア_ホーム メニュータイトルの間隔*/
+[class*="area_home"] {
+  padding: 60px 0 120px;
+}
+
+/* ヘッド --------------------------------------*/
+.head_home {
+  margin: 0 0 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.head_home .ttl {
+  color: #6f6f6f;
+  /* font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-style: normal; */
+  font: 500 56px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  font-weight: 500;
+  padding: 0 0 12px;
+  position: relative;
+}
+
+.head_home .ttl:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #F7A8B6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* 2分割レイアウト -------------------------------------*/
+.layout_2_div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -40px;
+}
+
+.layout_2_div>div {
+  width: 50%;
+  padding: 0 40px;
+}
+
+/* テキスト_ホーム */
+.text_home .ttl {
+  color: #303030;
+  font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+  margin: 0 0 20px;
+}
+
+.text_home .description {
+  color: #303030;
+  font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
+}
+
+
+/* WORKS */
+.list_feature {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.list_feature>li {
+  width: 33.3333%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list_feature .img {
+  margin: 0 0 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.list_feature img {
+  width: 330px;
+  height: 400px;
+  vertical-align: bottom;
+  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
+}
+
+.list_feature .ttl {
+  color: #303030;
+  font: 400 28px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+  margin: 0 0 30px;
+}
+
+.list_feature .description {
+  color: #303030;
+  font: 200 16px/2em 'noto sans japanese', sans-serif;
+}
+
+.list_feature a:hover{ 
+	opacity:0.5;
+	transition:0.3s;
+}
+
+/* プロフィール----------------------------- */
+.area_home_profile img {
+  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
+}
+
+
+/* フッター */
+footer>.container {
+  font: 400 10px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  padding: 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* worksスペース---------------------------------------------- */
+/* テキスト_ワーク */
+.text_work .ttl {
+  color: #303030;
+  font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+  margin: 0 0 20px;
+}
+
+.text_work .description {
+  /* line-height: 175%; */
+  color: #303030;
+  font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
+}
+
+.text_work p {
+  line-height: 180%;
+}
+
+
+/* ヘッター */
+.area_works_view {
+  background: url(../images/works_BG.jpg) no-repeat bottom center;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+/* .wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 4%;
+} */
+
+/* 見出し */
+.page-title {
+  text-align: center;
+  color: #575757;
+  font: 66px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  font-weight: 500;
+  padding: 30px 0 0 0;
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* worksのヘッターより下を上げる */
+.works-up {
+  margin-top: -150px;
+}
+.works-up01 {
+  margin-top: -50px;
+}
+
+
+/* .column_layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
