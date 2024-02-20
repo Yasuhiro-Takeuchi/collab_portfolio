@@ -1,0 +1,43 @@
+.top_title{
+    font-size: 90px;
+    font-family: "Rampart One";
+    opacity: 0;
+    transition: opacity 3s ease;
+    
+    
+
+}
+
+.animate{
+    opacity: 0;
+    padding-top: 200px;
+    transition: padding 2s ease;
+}
+
+.sub_title{
+    opacity: 0;
+    transition: opacity 2s ease;
+    transition-delay: 0.5s;
+    font-size: 50px;
+    font-family: "Rampart One";
+    padding-left: -100px;
+}
+
+.moji{
+    opacity: 0;
+    transition: opacity 2s ease;
+    transition-delay: 1s;
+}
+
+.works{
+    padding-top: 200px;
+    transition: padding 3s ease, opacity 3s ease;
+    opacity: 0;
+    
+}
+
+.profile{
+    padding-top: 200px;
+    transition: padding 3s ease, opacity 3s ease;
+    opacity: 0;
+}
