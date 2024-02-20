@@ -1,65 +1,26 @@
 <!DOCTYPE html>
-<html lang="ja">
+<!-- <html lang="ja"> -->
+    <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <title>ポートフォリオ
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOROKOBASELLER</title>
+    <!-- cssの読み込み -->
     <link rel="stylesheet" href="https://use.typekit.net/fuk1nmg.css">
     <link rel="stylesheet" href="css/cssreset-min.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/takechi.css">
+    <!-- slick.cssの読み込み -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 
 <body>
-    <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
 
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
-    <!-- 元のヘッダー -->
-    <!-- <header>
+    <!-- ヘッター -->
+    <header>
         <div class="container">
             <div class="area_logo_header">
                 <a href="index.html" class="logo">
@@ -68,24 +29,27 @@
             </div>
             <nav class="nav_header">
                 <ul class="list_nav_header">
-                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="works_test.html">WORKS</a></li>
                     <li><a href="#profile">PROFILE</a></li>
                 </ul>
             </nav>
         </div>
-    </header> -->
+    </header>
 
     <main>
         <!-- TOP -->
         <div class="area_top_view">
             <div class="container">
-                <div class="dai">
-                    <img src="images/oomidasi.svg">
+                <p class = "animate" id = "animate">a</p>
+                <div class="top_title"  id = "top_title">
+                    <p>よろこばセラー</p>
+                    <!-- <img src="images/oomidasi.svg"> -->
                 </div>
-                <div class="syou">
-                    <img src="images/komidasi.svg">
+                <div class="sub_title" id = "sub_title">
+                    <p>「喜ばせる✕「Seller」</p>
+                    <!-- <img src="images/komidasi.svg"> -->
                 </div>
-                <div class="ttl">
+                <div class="moji" id = "ttl">
                     <p>私が自分を一言で表すとすると「喜ばセラー」になりました。</p>
                     <p>小さい頃から人を喜ばせたり楽しませたりすることが好きで、誰かを喜ばせたり楽しませようとした時に頑張れた気がしたからです。</p>
                     <p>このサイトでは、私がどのように、誰を、どういう思いで、喜ばせていこうとしたかを紹介していこうと思います。</p>
@@ -93,81 +57,27 @@
             </div>
         </div>
 
-        <!-- カルーセル化したWORKS -->
-        <!-- リンクはまだつけていません -->
-        <section class="area_home_feature">
+        <!-- WORKS slickでのカルーソル　ulで管理 -->
+        <section class="area_home_feature works" id = "works2">
             <div class="container">
                 <div class="head_home">
                     <a id="works">
                         <h2 class="ttl">WORKS</h2>
                     </a>
                 </div>
-
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/works1_syuugou.jpg" class="d-block mx-auto p-0" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/works2_code.jpg" class="d-block mx-auto p-0" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/works3_meal.jpg" class="d-block mx-auto p-0" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+                <ul class="slider">
+                    <li><img src="https://placekitten.com/200/200" alt=""></li>
+                    <li><img src="https://placekitten.com/200/200" alt=""></li>
+                    <li><img src="https://placekitten.com/200/200" alt=""></li>
+                    <li><img src="https://placekitten.com/200/200" alt=""></li>
+                    <li><img src="https://placekitten.com/200/200" alt=""></li>
+                    <li><img src="https://placekitten.com/200/200" alt=""></li>
+                </ul>
             </div>
         </section>
 
-
-
-        <!-- 昔のWORKS -->
-        <!-- <section class="area_home_feature">
-            <div class="container">
-                <div class="head_home">
-                    <a id="works">
-                        <h2 class="ttl">WORKS</h2>
-                    </a>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="img">
-                            <a href="works01.html"><img src="images/top_syugou.jpg"></a>
-                        </div>
-                        <p class="ttl text-muted">仲間を喜ばせる</p>
-                        <p class="description text-muted">チームで言い合える雰囲気作り</p>
-
-                    </div>
-                    <div class="col-md-4">
-                        <a href="works02.html"><img src="images/top_code.jpg"></a>
-
-                        <p class="ttl text-muted">来場者を喜ばせる</p>
-                        <p class="description text-muted">体験を豊かにする細かな調整</p>
-
-                    </div>
-                    <div class="col-md-4">
-                        <a href="works03.html"><img src="images/top_meal.jpg"></a>
-
-                        <p class="ttl text-muted">見た人を喜ばせる</p>
-                        <p class="description text-muted">「美味しそう！」と言わせたい</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
         <!-- PROFILE -->
-        <section class="area_home_profile">
+        <section class="area_home_profile profile" id = "profile2">
             <div class="container">
                 <div class="head_home">
                     <a id="profile">
@@ -200,9 +110,14 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <!-- jqueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- slickの読み込み -->
+    <script src="js/slick.min.js"></script>
+    <!-- jsの読み込み -->
+    <script src="js/main.js"></script>
+    <script src="js/takechi.js"></script>
 </body>
 
 </html>

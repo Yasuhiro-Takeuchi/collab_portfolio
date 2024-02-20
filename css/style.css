@@ -13,7 +13,7 @@ a {
 }
 
 
-/* ヘッダー ---------------------------------------*/
+/* ヘッター ---------------------------------------*/
 header {
   width: 100%;
   position: absolute;
@@ -33,41 +33,49 @@ header>.container {
 .area_logo_header .logo {
   display: block;
 }
+
 .area_logo_header img {
   height: 40px;
   vertical-align: bottom;
+  padding: 0 15px;
+
 }
-.area_logo_header a:hover{
-  opacity:0.5;
-	transition:0.3s;
+
+.area_logo_header a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 /* ヘッダーナビ -------------------------------------------*/
 .nav_header {
   margin: 0 0 0 auto;
 }
+
 .list_nav_header {
   display: flex;
   align-items: center;
   /* margin: 0 -15px; */
   margin: 0;
 }
+
 .list_nav_header>li {
   padding: 0 15px;
 }
+
 .list_nav_header a {
   color: #474747;
   font: 400 20px/1em "futura-pt", 'noto sans japanese', sans-serif;
 }
-.list_nav_header a:hover{ 
-	opacity:0.5;
-	transition:0.3s;
+
+.list_nav_header a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 
 
 
-
+/* トップページ----------------------------------------------- */
 /* TOP----------------------------------------- */
 .area_top_view {
   background: url(../images/top_BG.jpg) no-repeat bottom center;
@@ -88,24 +96,18 @@ header>.container {
   vertical-align: bottom;
 }
 
-.area_top_view .dai {
-  /* text-align: left; */
-  /* width: 2000px; */
-  /* height: 70px; */
-  /* left: 1000px; */
-  margin-left: -210px;
-  vertical-align: bottom;
+/* トップタイトル */
+.top_title {
+  display: block;
+  padding: 0 0 0 0px;
+  position: relative;
 }
 
 /* サブキャッチコピーの大きさ */
-.area_top_view .syou {
-  /* text-align: left; */
-  /* width: 30%; */
-  margin-left: -410px;
-  padding: 50px 0 0 0px;
-  width: 320px;
-  /* height: 100%; */
-  vertical-align: bottom;
+.sub_title {
+  position: relative;
+  width: 30%;
+  max-width: 1080px;
 }
 
 .area_top_view .ttl {
@@ -114,8 +116,6 @@ header>.container {
   letter-spacing: .04em;
   max-width: 1080px;
   margin: 20px 170px;
-  /* margin: 0px 0; */
-  /* padding: 0 0 0 40px; */
   padding: 0 0 0 0px;
   position: relative;
 }
@@ -126,10 +126,11 @@ header>.container {
 
 /* エリア_ホーム メニュータイトルの間隔*/
 [class*="area_home"] {
+  /* padding: 上　左右　下; */
   padding: 60px 0 120px;
 }
 
-/* ヘッド --------------------------------------*/
+/* ヘッド（WORKSとか） --------------------------------------*/
 .head_home {
   margin: 0 0 100px;
   display: flex;
@@ -143,10 +144,12 @@ header>.container {
   font-style: normal; */
   font: 500 56px/1em "futura-pt", 'noto sans japanese', sans-serif;
   font-weight: 500;
+  /* "WORK"と下の下線との距離 */
   padding: 0 0 12px;
   position: relative;
 }
 
+/* "WORK"下のピンクの下線 */
 .head_home .ttl:after {
   content: "";
   display: block;
@@ -158,7 +161,12 @@ header>.container {
   left: 0;
 }
 
-/* 2分割レイアウト -------------------------------------*/
+/* プロフィール-------------------------------------- */
+.area_home_profile img {
+  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
+}
+
+/* 2分割レイアウト */
 .layout_2_div {
   display: flex;
   flex-wrap: wrap;
@@ -171,7 +179,7 @@ header>.container {
   padding: 0 40px;
 }
 
-/* テキスト_ホーム */
+/* テキスト_ホーム（プロフィール文） */
 .text_home .ttl {
   color: #303030;
   font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif;
@@ -184,57 +192,7 @@ header>.container {
 }
 
 
-/* WORKS */
-.list_feature {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -20px;
-}
-
-.list_feature>li {
-  width: 33.3333%;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.list_feature .img {
-  margin: 0 0 40px;
-  position: relative;
-  z-index: 1;
-}
-
-.list_feature img {
-  width: 330px;
-  height: 400px;
-  vertical-align: bottom;
-  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
-}
-
-.list_feature .ttl {
-  color: #303030;
-  font: 400 28px/1em 'futura-pt', 'noto sans japanese', sans-serif;
-  margin: 0 0 30px;
-}
-
-.list_feature .description {
-  color: #303030;
-  font: 200 16px/2em 'noto sans japanese', sans-serif;
-}
-
-.list_feature a:hover{ 
-	opacity:0.5;
-	transition:0.3s;
-}
-
-/* プロフィール----------------------------- */
-.area_home_profile img {
-  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
-}
-
-
-/* フッター */
+/* フッター --------------------------------------------*/
 footer>.container {
   font: 400 10px/1em "futura-pt", 'noto sans japanese', sans-serif;
   padding: 0 0 80px;
@@ -244,61 +202,109 @@ footer>.container {
 }
 
 
-/* worksスペース---------------------------------------------- */
-/* テキスト_ワーク */
-.text_work .ttl {
-  color: #303030;
-  font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif;
-  margin: 0 0 20px;
-}
-
-.text_work .description {
-  /* line-height: 175%; */
-  color: #303030;
-  font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
-}
-
-.text_work p {
-  line-height: 180%;
-}
 
 
-/* ヘッター */
+/* WORKSページ--------------------------------------------------------- */
+/* WORKSヘッター ----------------------------------------*/
 .area_works_view {
-  background: url(../images/works_BG.jpg) no-repeat bottom center;
+  background: url(../images/top_BG.jpg) no-repeat bottom center;
   background-size: cover;
-  height: 300px;
+  height: 270px;
   margin-bottom: 40px;
 }
 
-/* .wrapper {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 4%;
-} */
-
-/* 見出し */
+/* ページタイトル */
 .page-title {
   text-align: center;
   color: #575757;
   font: 66px/1em "futura-pt", 'noto sans japanese', sans-serif;
   font-weight: 500;
-  padding: 30px 0 0 0;
-  position: relative;
+  /* "WORKS"の文字を下げる */
+  padding: 120px 0 0 0;
   text-transform: uppercase;
 }
 
-/* worksのヘッターより下を上げる */
-.works-up {
-  margin-top: -150px;
-}
-.works-up01 {
-  margin-top: -50px;
-}
-
-
-/* .column_layout {
+/* 2段組にする */
+.works_contents {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+article {
+  width: 74%;
+}
+
+/* 作品タイトルや使用技術 */
+.works_info {
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+}
+
+.works_title {
+  /* color: #575757; */
+  font-size: 2rem;
+  font-weight: 500;
+  position: absolute;
+  /* 少し上に上げてサイドバーの文字に高さを合わせている */
+  top: -6px;
+}
+
+.works_tech {
+  /* works_titleがabsoluteなので文字の大きさ分下げる */
+  padding: 35px 0 0 0;
+}
+
+/* 画像の上下から文字までの空き */
+article img {
+  margin-bottom: 20px;
+}
+
+/* pタグで囲ったもの同士の距離を空ける */
+article p {
+  margin-bottom: 1rem;
+}
+
+/* サイドバー */
+aside {
+  width: 20%;
+}
+.sub_works {
+  margin-bottom: 60px;
+  list-style: none;
+}
+.sub_works li {
+  border-bottom: 1px #ddd solid;
+}
+.sub_works a {
+  color: #432;
+  padding: 10px;
+  display: block;
+}
+.sub_works a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+aside p {
+  padding: 12px 10px;
+}
+.aside_title {
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px #F7A8B6 solid;
+  font-weight: normal;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* レスポンシブ------------------------------------- */
+@media (max-width: 600px) {
+  .top_title {
+    width: 50vw;
+  }
+
+  .top_title {
+    margin-top: 100px;
+  }
+}
