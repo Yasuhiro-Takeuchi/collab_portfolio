@@ -33,35 +33,43 @@ header>.container {
 .area_logo_header .logo {
   display: block;
 }
+
 .area_logo_header img {
   height: 40px;
   vertical-align: bottom;
+  padding: 0 15px;
+
 }
-.area_logo_header a:hover{
-  opacity:0.5;
-	transition:0.3s;
+
+.area_logo_header a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 /* ヘッダーナビ -------------------------------------------*/
 .nav_header {
   margin: 0 0 0 auto;
 }
+
 .list_nav_header {
   display: flex;
   align-items: center;
   /* margin: 0 -15px; */
   margin: 0;
 }
+
 .list_nav_header>li {
   padding: 0 15px;
 }
+
 .list_nav_header a {
   color: #474747;
   font: 400 20px/1em "futura-pt", 'noto sans japanese', sans-serif;
 }
-.list_nav_header a:hover{ 
-	opacity:0.5;
-	transition:0.3s;
+
+.list_nav_header a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 
@@ -88,24 +96,33 @@ header>.container {
   vertical-align: bottom;
 }
 
-.area_top_view .dai {
+/* トップタイトル */
+.top_title {
+  display: block;
+  /* margin: 20px 170px; */
+  /* margin: 0 auto 0 0; */
+  padding: 0 0 0 0px;
+  position: relative;
   /* text-align: left; */
   /* width: 2000px; */
   /* height: 70px; */
   /* left: 1000px; */
-  margin-left: -210px;
-  vertical-align: bottom;
+  /* margin-left: -210px;
+  vertical-align: bottom; */
 }
 
 /* サブキャッチコピーの大きさ */
-.area_top_view .syou {
+.sub_title {
+  position: relative;
+  width: 30%;
+  max-width: 1080px;
+  /* margin: 0 auto 0 0; */
   /* text-align: left; */
-  /* width: 30%; */
-  margin-left: -410px;
+  /* margin-left: -410px;
   padding: 50px 0 0 0px;
-  width: 320px;
+  width: 320px; */
   /* height: 100%; */
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 }
 
 .area_top_view .ttl {
@@ -126,10 +143,11 @@ header>.container {
 
 /* エリア_ホーム メニュータイトルの間隔*/
 [class*="area_home"] {
+  /* padding: 上　左右　下; */
   padding: 60px 0 120px;
 }
 
-/* ヘッド --------------------------------------*/
+/* ヘッド（WORKSとか） --------------------------------------*/
 .head_home {
   margin: 0 0 100px;
   display: flex;
@@ -143,10 +161,12 @@ header>.container {
   font-style: normal; */
   font: 500 56px/1em "futura-pt", 'noto sans japanese', sans-serif;
   font-weight: 500;
+  /* "WORK"と下の下線との距離 */
   padding: 0 0 12px;
   position: relative;
 }
 
+/* "WORK"下の下線 */
 .head_home .ttl:after {
   content: "";
   display: block;
@@ -157,32 +177,6 @@ header>.container {
   bottom: 0;
   left: 0;
 }
-
-/* 2分割レイアウト -------------------------------------*/
-.layout_2_div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0 -40px;
-}
-
-.layout_2_div>div {
-  width: 50%;
-  padding: 0 40px;
-}
-
-/* テキスト_ホーム */
-.text_home .ttl {
-  color: #303030;
-  font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif;
-  margin: 0 0 20px;
-}
-
-.text_home .description {
-  color: #303030;
-  font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
-}
-
 
 /* WORKS */
 .list_feature {
@@ -223,18 +217,43 @@ header>.container {
   font: 200 16px/2em 'noto sans japanese', sans-serif;
 }
 
-.list_feature a:hover{ 
-	opacity:0.5;
-	transition:0.3s;
+.list_feature a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
-/* プロフィール----------------------------- */
+/* プロフィール-------------------------------------- */
 .area_home_profile img {
   box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
 }
 
+/* 2分割レイアウト */
+.layout_2_div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -40px;
+}
 
-/* フッター */
+.layout_2_div>div {
+  width: 50%;
+  padding: 0 40px;
+}
+
+/* テキスト_ホーム（プロフィール文） */
+.text_home .ttl {
+  color: #303030;
+  font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+  margin: 0 0 20px;
+}
+
+.text_home .description {
+  color: #303030;
+  font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
+}
+
+
+/* フッター --------------------------------------------*/
 footer>.container {
   font: 400 10px/1em "futura-pt", 'noto sans japanese', sans-serif;
   padding: 0 0 80px;
@@ -244,6 +263,7 @@ footer>.container {
 }
 
 
+/* --------------------------------------------------------------------- */
 /* worksスペース---------------------------------------------- */
 /* テキスト_ワーク */
 .text_work .ttl {
@@ -263,7 +283,7 @@ footer>.container {
 }
 
 
-/* ヘッター */
+/* WORKSヘッター ----------------------------------------*/
 .area_works_view {
   background: url(../images/works_BG.jpg) no-repeat bottom center;
   background-size: cover;
@@ -292,13 +312,19 @@ footer>.container {
 .works-up {
   margin-top: -150px;
 }
+
 .works-up01 {
   margin-top: -50px;
 }
 
+/* -------------------------------------------------------------------- */
+/* レスポンシブ------------------------------------- */
+@media (max-width: 600px) {
+  .top_title {
+    width: 50vw;
+  }
 
-/* .column_layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+  .top_title {
+    margin-top: 100px;
+  }
+}
