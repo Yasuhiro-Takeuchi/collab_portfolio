@@ -41,3 +41,24 @@
     transition: padding 3s ease, opacity 3s ease;
     opacity: 0;
 }
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .top_title{
+        font-size: 20px;
+    }
+
+    .sub_title{
+        font-size: 20px;
+        padding-left: -100px;
+    }
+
+    /* .work{
+        font-size: 20px;
+    } */
+    .works{
+        padding-top: 10px;
+        
+    }
+
+}

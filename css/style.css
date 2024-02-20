@@ -245,6 +245,7 @@ header>.container {
   color: #303030;
   font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif;
   margin: 0 0 20px;
+
 }
 
 .text_home .description {
@@ -327,4 +328,39 @@ footer>.container {
   .top_title {
     margin-top: 100px;
   }
+
+  .head_home .ttl {
+    color: #6f6f6f;
+    /* font-family: "futura-pt", sans-serif;
+    font-weight: 700;
+    font-style: normal; */
+    font: 500 30px/1em "futura-pt", 'noto sans japanese', sans-serif;
+    font-weight: 500;
+    /* "WORK"と下の下線との距離 */
+    padding: 0 0 12px;
+    position: relative;
+  }
+
+  .head_home {
+    margin: 0 0 30px;
+  }
+
+  .layout_2_div {
+    display: block; /* スマートフォンの場合、flexを無効にしてブロック要素として表示する */
+    /* margin: 0;  */
+  }
+  /* .text_home .ttl {
+    color: #303030;
+    font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+    margin: 0 0 20px;
+    white-space: nowrap;
+    
+  } */
+
+  .text_home .ttl {
+    color: #303030;
+    margin: 0 0 0px;
+  
+  }
+
 }
