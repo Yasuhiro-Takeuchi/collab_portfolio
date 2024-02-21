@@ -86,41 +86,41 @@ header>.container {
   height: 700px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* 左右に余白をつける*/
+  width: 94%;
+  /* TOPの要素を左揃えにする */
+  align-items: start;
   justify-content: center;
 }
 
-.area_top_view img {
-  text-align: left;
-  height: 75px;
-  vertical-align: bottom;
-}
-
 /* トップタイトル */
-.top_title {
+.top_title img {
+  /* タイトルの大きさ */
+  height: 60px;
   display: block;
-  padding: 0 0 0 0px;
   position: relative;
 }
 
-/* サブキャッチコピーの大きさ */
-.sub_title {
-  position: relative;
-  width: 30%;
-  max-width: 1080px;
+/* サブタイトル */
+.sub_title img {
+  height: 30px;
 }
 
-.area_top_view .ttl {
-  color: #474747;
+/* .area_top_view .ttl {
+  color: #f0e8e8;
   font: 200 13px/1em "futura-pt", 'noto sans japanese', sans-serif;
   letter-spacing: .04em;
   max-width: 1080px;
   margin: 20px 170px;
   padding: 0 0 0 0px;
   position: relative;
-}
+} */
 
+/* トップの説明文 */
 .area_top_view p {
+  color: #373737;
+  font: 200 13px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  letter-spacing: .04em;
   line-height: 175%;
 }
 
@@ -171,18 +171,24 @@ header>.container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  /* margin: 上下 左右; */
   margin: 0 -40px;
 }
 
 .layout_2_div>div {
-  width: 50%;
+  width: 47%;
   padding: 0 40px;
 }
 
 /* テキスト_ホーム（プロフィール文） */
+.layout_2_div .text_home {
+  width: 47%;
+}
+
 .text_home .ttl {
   color: #303030;
   font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+  /* margin: 上 左右 下; */
   margin: 0 0 20px;
 }
 
@@ -270,25 +276,31 @@ article p {
 aside {
   width: 20%;
 }
+
 .sub_works {
   margin-bottom: 60px;
   list-style: none;
 }
+
 .sub_works li {
   border-bottom: 1px #ddd solid;
 }
+
 .sub_works a {
   color: #432;
   padding: 10px;
   display: block;
 }
+
 .sub_works a:hover {
   opacity: 0.5;
   transition: 0.3s;
 }
+
 aside p {
   padding: 12px 10px;
 }
+
 .aside_title {
   font-size: 1.375rem;
   padding: 0 8px 8px;
@@ -299,12 +311,56 @@ aside p {
 
 /* -------------------------------------------------------------------- */
 /* レスポンシブ------------------------------------- */
-@media (max-width: 600px) {
+@media screen and (max-width: 768px) {
+
+  /* TOP---------------- */
   .top_title {
     width: 50vw;
   }
 
   .top_title {
     margin-top: 100px;
+  }
+
+  /* プロフィール---------- */
+  .layout_2_div>div {
+    width: 100%;
+    /* padding: 0 40px; */
+    margin: 0 0 40px;
+    /* margin: 0 auto; */
+  }
+
+  /* テキスト_ホーム（プロフィール文） */
+  .layout_2_div .text_home {
+    width: 100%;
+  }
+
+  /* 名前の大きさ */
+  .text_home .ttl {
+    font: 400 30px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+    /* margin: 上 左右 下; */
+    margin: 0 0 20px;
+  }
+
+  /* 自己紹介の大きさ */
+  .text_home .description {
+    font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
+  }
+}
+
+/* ウィンドウサイズ480px以下------------------------------------ */
+@media screen and (max-width: 480px) {
+
+  /* プロフィール----------------- */
+  /* 名前の大きさ */
+  .text_home .ttl {
+    font: 400 24px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+    /* margin: 上 左右 下; */
+    margin: 0 0 20px;
+  }
+
+  /* 自己紹介の大きさ */
+  .text_home .description {
+    font: 300 10px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
   }
 }
