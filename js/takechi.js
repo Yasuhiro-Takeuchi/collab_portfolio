@@ -30,14 +30,15 @@ window.addEventListener('scroll',function(){
     }
 
 
-    if(scroll > 500){
+    if(scroll > 400){
         works.style.opacity = 1;
-        works.style.paddingTop = "30px";
+        works.style.paddingTop = "100px";
     }
 
-    if(scroll > 1130){
+    if(scroll > 800){
         profile.style.opacity = 1;
-        profile.style.paddingTop = "30px";
+        profile.style.paddingTop = "100px";
+        // profile.style.paddingTop = "30px";
     }
     // else{
     //     oomidasi.style.opacity = 0;

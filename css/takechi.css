@@ -27,14 +27,13 @@
 }
 
 .works{
-    padding-top: 200px;
-    transition: padding 3s ease, opacity 3s ease;
-    opacity: 0;
-    
+    /* padding-top: 200px; */
+    /* transition: padding 3s ease, opacity 3s ease; */
+    /* opacity: 0; */
 }
 
 .profile{
-    padding-top: 200px;
-    transition: padding 3s ease, opacity 3s ease;
-    opacity: 0;
+    /* padding-top: 200px; */
+    /* transition: padding 3s ease, opacity 3s ease; */
+    /* opacity: 0; */
 }

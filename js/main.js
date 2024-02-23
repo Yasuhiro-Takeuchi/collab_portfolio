@@ -3,6 +3,7 @@ $('.slider').slick({
     slidesToShow: 3,//スライドを画面に3枚見せる
     slidesToScroll: 3,//1回のスクロールで3枚の写真を移動して見せる
     dots: true,//下部ドットナビゲーションの表示
+    centerPadding: '160px',
 
     responsive: [
         {
