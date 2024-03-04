@@ -176,6 +176,10 @@ header>.container {
   /*スライダー内の画像を横幅100%に*/
   height: auto;
 }
+.slider img:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
 
 /* スライド同士に余白をつける */
 .slider .slick-slide {
@@ -320,6 +324,7 @@ footer>.container {
   display: grid;
   gap: 100px 50px;
   grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 100px; */
   /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   margin-bottom: 50px;
 }
@@ -361,28 +366,47 @@ article {
 /* 作品タイトルと使用技術 */
 .works_info {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .works_title {
   /* color: #575757; */
   font-size: 2.5rem;
-  font-weight: 500;
-  padding-bottom: 0px;
+  font-weight: 800;
+  padding-bottom: 0;
 }
-
-/* .works_tech { */
-/* padding: 35px 0 0 0; */
-/* } */
 
 /* 画像の上下から文字までの空き */
 article img {
-  margin-bottom: 20px;
+  /* margin: 20px 0; */
+  margin-top: 20px;
 }
 
 /* pタグで囲ったもの同士の距離を空ける */
 article p {
   margin-bottom: 1rem;
+  /* margin-bottom: 2.5rem; */
+}
+
+/* 記事内の見出しの大きさ */
+.works_contents h4 {
+  font-size: 1.5rem;
+  font-weight: 550;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.ingenuity li {
+  padding-bottom: 10px;
+  /* list-style: disc; */
+}
+
+.works_contents span {
+  font-weight: 550;
+}
+
+.sourceURL {
+  padding-top: 50px;
 }
 
 /* サイドバー */
