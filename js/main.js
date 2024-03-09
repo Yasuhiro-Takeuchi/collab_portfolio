@@ -2,8 +2,9 @@ $('.slider').slick({
   infinite: true,//スライドをループさせるかどうか。初期値はtrue。
   slidesToShow: 3,//スライドを画面に3枚見せる
   slidesToScroll: 3,//1回のスクロールで3枚の写真を移動して見せる
-  dots: true,//下部ドットナビゲーションの表示
+  // dots: true,//下部ドットナビゲーションの表示
   autoplay: true,
+  speed: 3000,
   responsive: [
     {
       breakpoint: 769,//モニターの横幅が769px以下の見せ方

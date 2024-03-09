@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/takechi.css">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <!-- slick.cssの読み込み -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
@@ -52,10 +54,23 @@
                         <!-- <p class="post-date">3/30 <span>2019</span></p> -->
                         <p class="works_tech">使用技術：Processing、Arduino</p>
                     </header>
-                    <p>
-                        心拍の情報の可視化が課題の授業で、ArduinoとProcessingを用い、データのビジュアライゼーションを行いました。
-                    </p>
-                    <img src="https://placekitten.com/800/400" alt="">
+
+                    <section class="lead">
+                        <p>
+                            心拍の情報の可視化が課題の授業で、ArduinoとProcessingを用い、データのビジュアライゼーションを行いました。
+                        </p>
+                    </section>
+
+                    <div class="article_imgae_grid">
+                        <div class="item">
+                            <img src="images/works_images/BeatBall_01.jpg" alt="">
+                            <p>心拍を検知していない時の画面</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/works_images/BeatBall_02.jpg" alt="">
+                            <p>心拍を検知すると加速度が与えられ、速度に応じて色が変化する</p>
+                        </div>
+                    </div>
 
                     <h4>作品概要</h4>
                     <p>
@@ -66,12 +81,17 @@
                         心拍の可視化ということで、血中に漂う赤血球をイメージしました。
                         脈がなるごとに、赤血球に力が働き、動き出します。そしてその後は抵抗を感じ、徐々に減速していきます。
                     </p>
+
                     <h4>工夫した点</h4>
-                    <p>
-                        うようよ動く赤血球の、有機的な動き
-                        脈がくる時、加速度の他に色の明度を上げ、視覚的にわかりやすくした。
-                    </p>
-                    <p><a href="https://github.com/kento-012/BeatBall">ソースコード</a></p>
+                    <ul class="ingenuity">
+                        <li>うようよ動く赤血球の、有機的な動き</li>
+                        <li>脈がくる時、加速度の他に色の明度を上げ、視覚的にわかりやすくした。</li>
+                        <li>パーティクルの数、大きさ、色を何度も変更し、わかりやすさを出した</li>
+                    </ul>
+
+                    <div class="sourceURL">
+                        <p><a href="https://github.com/kento-012/BeatBall">githubリンク</a></p>
+                    </div>
                 </article>
 
                 <aside>
@@ -81,14 +101,12 @@
                         <li><a href="works_HungaReCollection.html">Hunga -Re- Collection展</a></li>
                         <li><a href="works_BeatBall.html">心拍のビジュアライゼーション</a></li>
                         <li><a href="works_kikaku5.html">自治体との連携授業</a></li>
-                        <li><a href="works_HungOut.html">建築分野とのコラボレーション・ハッカソン「モノの移り変わり」</a></li>
+                        <li><a href="works_HangOut.html">建築分野とのコラボレーション・ハッカソン「モノの移り変わり」</a></li>
                         <li><a href="works_mediaB.html">ゲームの制作</a></li>
                     </ul>
 
                     <!-- <h5 class="aside_title">何かに使うやつ</h5>
                     <p>
-                        体に優しい自然食を提供する、WCB CAFE。無添加の食材を利用したメニューが特徴です。
-                        おいしいブレンドコーヒーとヘルシーなオーガニックフードで体の内側から癒やされてください。
                     </p> -->
                 </aside>
             </div>

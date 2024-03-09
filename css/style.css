@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/* @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css); */
 
 /* paddingの変数 */
 :root {
@@ -14,7 +14,12 @@ a {
 .container {
   max-width: 1160px;
   padding: 0 40px;
+  /* padding: 0 40px; */
   margin: 0 auto;
+}
+
+* {
+  font-family: 'noto sans japanese', sans-serif;
 }
 
 
@@ -65,8 +70,10 @@ header>.container {
 }
 
 .list_nav_header a {
-  color: #474747;
-  font: 400 20px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  /* color: #000; */
+  /* font-family: 'noto sans japanese', sans-serif; */
+  font: 400 20px/1em 'noto sans japanese', sans-serif;
+  /* font: 400 20px/1em "futura-pt", 'noto sans japanese', sans-serif; */
 }
 
 .list_nav_header a:hover {
@@ -80,7 +87,7 @@ header>.container {
 /* トップページ----------------------------------------------- */
 /* TOP----------------------------------------- */
 .area_top_view {
-  background: url(../images/top_BG.jpg) no-repeat bottom center;
+  background: url(../images/top_BG2.jpg) no-repeat bottom center;
   background-size: cover;
 }
 
@@ -113,8 +120,9 @@ header>.container {
 
 /* トップの説明文 */
 .area_top_view p {
-  color: #373737;
-  font: 200 13px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  /* color: #373737; */
+  /* font: 200 13px/1em "futura-pt", 'noto sans japanese', sans-serif; */
+  font: 200 13px/1em 'noto sans japanese', sans-serif;
   letter-spacing: .04em;
   line-height: 175%;
 }
@@ -141,12 +149,14 @@ header>.container {
 }
 
 .head_home .ttl {
-  color: #6f6f6f;
-  font: 500 56px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  /* color: #6f6f6f; */
+  /* font: 500 56px/1em "futura-pt", 'noto sans japanese', sans-serif; */
+  font: 500 56px/1em 'noto sans japanese', sans-serif;
+  font-size: 56px;
   font-weight: 500;
   font-style: normal;
   /* "WORK"と下の下線との距離 */
-  padding: 0 0 12px;
+  padding: 0 0 5px;
   position: relative;
 }
 
@@ -156,7 +166,7 @@ header>.container {
   display: block;
   width: 100%;
   height: 5px;
-  background: #F7A8B6;
+  background: #CECDB9;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -175,7 +185,13 @@ header>.container {
   width: 100%;
   /*スライダー内の画像を横幅100%に*/
   height: auto;
+  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
 }
+
+.slider p {
+  margin-top: 10px;
+}
+
 .slider img:hover {
   opacity: 0.5;
   transition: 0.3s;
@@ -207,25 +223,26 @@ header>.container {
 .square_button {
   position: relative;
   background-color: transparent;
-  color: #F7A8B6;
+  color: #CECDB9;
   padding: 12px 43px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font: 400 20px/1em 'noto sans japanese', sans-serif;
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   margin: 4px 2px;
   cursor: pointer;
-  border: 2px solid #F7A8B6;
-  border-radius: 5px;
+  border: 2px solid #CECDB9;
+  /* border-radius: 5px; */
 }
 
 .square_button:hover {
-  background-color: #F7A8B6;
+  background-color: #CECDB9;
   /* 背景色 */
   color: white;
   /* 文字色 */
-  border: 2px solid #F7A8B6;
+  border: 2px solid #CECDB9;
   /* 枠線 */
 }
 
@@ -264,21 +281,25 @@ header>.container {
 }
 
 .text_home .ttl {
-  color: #303030;
-  font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+  /* color: #303030; */
+  /* font: 400 32px/1em 'futura-pt', 'noto sans japanese', sans-serif; */
+  font: 400 32px/1em 'noto sans japanese', sans-serif;
   /* margin: 上 左右 下; */
   margin: 0 0 20px;
 }
 
 .text_home .description {
-  color: #303030;
-  font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
+  /* color: #303030; */
+  /* font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif; */
+  font: 300 13px/1em 'noto sans japanese', sans-serif;
 }
 
 
 /* フッター --------------------------------------------*/
 footer>.container {
-  font: 400 10px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  /* font: 400 10px/1em "futura-pt", 'noto sans japanese', sans-serif; */
+  font: 400 10px/1em 'noto sans japanese', sans-serif;
+
   padding: 120px 0 80px;
   display: flex;
   flex-direction: column;
@@ -291,7 +312,7 @@ footer>.container {
 /* WORKSページ--------------------------------------------------------- */
 /* WORKSヘッター ----------------------------------------*/
 .area_works_view {
-  background: url(../images/top_BG.jpg) no-repeat bottom center;
+  background: url(../images/top_BG2.jpg) no-repeat bottom center;
   background-size: cover;
 }
 
@@ -306,8 +327,10 @@ footer>.container {
 /* ページタイトル */
 .page_title {
   text-align: center;
-  color: #575757;
-  font: 66px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  /* color: #575757; */
+  /* font: 66px/1em "futura-pt", 'noto sans japanese', sans-serif; */
+  font: 500 66px/1em 'noto sans japanese', sans-serif;
+
   font-weight: 500;
   /* "WORKS"の文字を下げる */
   padding: 120px 0 0 0;
@@ -322,9 +345,9 @@ footer>.container {
 
 .grid {
   display: grid;
-  gap: 100px 50px;
+  gap: 80px 50px;
+  /* gap: 100px 50px; */
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: 100px; */
   /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   margin-bottom: 50px;
 }
@@ -343,7 +366,7 @@ footer>.container {
   padding-top: 5px;
 }
 
-/* WORKS詳細-------------------------- */
+/* WORKS詳細--------------------------------------------------- */
 .area_works_article>.container {
   max-width: 1080px;
   padding: 0 var(--main_padding);
@@ -360,7 +383,7 @@ footer>.container {
 article {
   width: 74%;
   /* 左カラムの文字色 */
-  color: #373737;
+  /* color: #373737; */
 }
 
 /* 作品タイトルと使用技術 */
@@ -371,16 +394,25 @@ article {
 
 .works_title {
   /* color: #575757; */
-  font-size: 2.5rem;
+  font-size: 30px;
+  /* font-size: 2.5rem; */
   font-weight: 800;
   padding-bottom: 0;
 }
 
-/* 画像の上下から文字までの空き */
-article img {
-  /* margin: 20px 0; */
-  margin-top: 20px;
+/* works詳細内の写真グリッド */
+.article_imgae_grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 3%;
 }
+
+/* article img {
+  width: 100%;
+  margin-top: 20px;
+} */
 
 /* pタグで囲ったもの同士の距離を空ける */
 article p {
@@ -390,14 +422,20 @@ article p {
 
 /* 記事内の見出しの大きさ */
 .works_contents h4 {
-  font-size: 1.5rem;
+  font-size: 20px;
+  /* font-size: 1.5rem; */
   font-weight: 550;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
+.works_contents p {
+  font-size: 13px;
+}
+
 .ingenuity li {
   padding-bottom: 10px;
+  font-size: 13px;
   /* list-style: disc; */
 }
 
@@ -413,7 +451,7 @@ article p {
 aside {
   width: 22%;
   /* 右カラムの文字色 */
-  color: #373737;
+  /* color: #373737; */
 }
 
 .sub_works {
@@ -442,7 +480,7 @@ aside p {
 .aside_title {
   font-size: 1.375rem;
   padding: 0 8px 8px;
-  border-bottom: 2px #F7A8B6 solid;
+  border-bottom: 2px #CECDB9 solid;
   font-weight: normal;
 }
 
@@ -471,7 +509,9 @@ aside p {
 
 .profile_img_caption .ttl {
   /* color: #6f6f6f; */
-  font: 500 30px/1em "futura-pt", 'noto sans japanese', sans-serif;
+  /* font: 500 30px/1em "futura-pt", 'noto sans japanese', sans-serif; */
+  font: 500 30px/1em 'noto sans japanese', sans-serif;
+
   font-weight: 500;
   font-style: normal;
   padding-bottom: 10px;
@@ -535,21 +575,24 @@ aside p {
   /* トップ　プロフィール---------- */
   /* 名前の大きさ */
   .text_home .ttl {
-    font: 400 25px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+    /* font: 400 25px/1em 'futura-pt', 'noto sans japanese', sans-serif; */
+    font: 400 25px/1em 'noto sans japanese', sans-serif;
     /* margin: 上 左右 下; */
     margin: 0 0 20px;
   }
 
   /* 自己紹介の大きさ */
   .text_home .description {
-    font: 300 10px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
+    /* font: 300 10px/1.8em 'futura-pt', 'noto sans japanese', sans-serif; */
+    font: 300 10px/1em 'noto sans japanese', sans-serif;
   }
 
 
   /* プロフィールページ------------------------------------------------ */
   .profile_img_caption .ttl {
     /* color: #6f6f6f; */
-    font: 500 25px/1em "futura-pt", 'noto sans japanese', sans-serif;
+    /* font: 500 25px/1em "futura-pt", 'noto sans japanese', sans-serif; */
+    font: 500 25px/1em 'noto sans japanese', sans-serif;
     font-weight: 500;
     font-style: normal;
     padding-bottom: 10px;
@@ -574,14 +617,16 @@ aside p {
 
   /* 名前の大きさ */
   .text_home .ttl {
-    font: 400 30px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+    /* font: 400 30px/1em 'futura-pt', 'noto sans japanese', sans-serif; */
+    font: 400 30px/1em 'noto sans japanese', sans-serif;
     /* margin: 上 左右 下; */
     margin: 0 0 20px;
   }
 
   /* 自己紹介の大きさ */
   .text_home .description {
-    font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
+    /* font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif; */
+    font: 300 13px/1em 'noto sans japanese', sans-serif;
   }
 
 
@@ -594,14 +639,17 @@ aside p {
   /* プロフィール----------------- */
   /* 名前の大きさ */
   .text_home .ttl {
-    font: 400 30px/1em 'futura-pt', 'noto sans japanese', sans-serif;
+    /* font: 400 30px/1em 'futura-pt', 'noto sans japanese', sans-serif; */
+    font: 400 30px/1em 'noto sans japanese', sans-serif;
+
     /* margin: 上 左右 下; */
     margin: 0 0 20px;
   }
 
   /* 自己紹介の大きさ */
   .text_home .description {
-    font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif;
+    /* font: 300 13px/1.8em 'futura-pt', 'noto sans japanese', sans-serif; */
+    font: 300 13px/1em 'noto sans japanese', sans-serif;
   }
 
 
@@ -617,7 +665,9 @@ aside p {
 
   .profile_img_caption .ttl {
     /* color: #6f6f6f; */
-    font: 500 30px/1em "futura-pt", 'noto sans japanese', sans-serif;
+    /* font: 500 30px/1em "futura-pt", 'noto sans japanese', sans-serif; */
+    font: 500 30px/1em 'noto sans japanese', sans-serif;
+    
     font-weight: 500;
     font-style: normal;
     padding-bottom: 10px;
