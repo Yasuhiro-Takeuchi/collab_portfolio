@@ -247,7 +247,7 @@ header>.container {
 
 .text_home p {
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 
@@ -290,7 +290,7 @@ footer>.container {
 /* WORKSグリッド------ */
 .grid {
   display: grid;
-  gap: 80px 50px;
+  gap: 60px 30px;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -315,7 +315,7 @@ footer>.container {
   justify-content: space-between;
 }
 
-article {
+.works_contents article {
   width: 74%;
 }
 
@@ -331,17 +331,35 @@ article {
   padding-bottom: 0;
 }
 
+.works_tech {
+  margin-top: 5px;
+}
+
 /* works詳細内の写真グリッド */
 .article_imgae_grid {
   display: grid;
-  gap: 50px;
+  gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   padding-top: 3%;
 }
 
+.article_imgae_grid .item {
+
+}
+
+.video_test {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video_test iframe {
+  width: 100%;
+  height: 100%;
+}
+
 /* pタグで囲ったもの同士の距離を空ける */
 .works_contents article p {
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* 記事内の見出しの大きさ */
@@ -369,6 +387,25 @@ article {
 .sourceURL {
   padding-top: 50px;
 }
+
+/* リンクURL */
+.sourceURL a:link {
+  color: #0000EE;
+  text-decoration: underline;
+ }
+ 
+ .sourceURL a:visited {
+  color: #551A8B;
+  text-decoration: underline;
+ }
+ 
+ /* .sourceURL a:hover {} */
+ 
+ .sourceURL a:active {
+  color: #FF0000;
+  text-decoration: underline;
+ }
+
 
 /* サイドバー */
 .works_contents aside {
@@ -401,7 +438,6 @@ article {
   transition: 0.3s;
 }
 
-
 /* ------------------------------------------------------------------- */
 /* プロフィールページ------------------------------------------------ */
 .profile_layout_2 {
@@ -420,18 +456,18 @@ article {
 }
 
 .aside_profile .ttl {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
   font-style: normal;
   padding-bottom: 10px;
 }
 
-.profile_layout_2 article {
-  width: 61%;
+.aside_profile p {
+  font-size: 13px;
 }
 
-.article_profile p {
-  /* margin-bottom: 1rem; */
+.profile_layout_2 article {
+  width: 58%;
 }
 
 .profile_info dl {
@@ -441,12 +477,12 @@ article {
 }
 
 .profile_info dl p {
-  /* padding: 0; */
-
+  padding: 0;
 }
 
 .profile_info dt {
   width: 30%;
+  font-weight: 700;
   padding-bottom: 20px;
   margin-bottom: 10px;
   /* background-color: #DADADA; */
@@ -457,6 +493,15 @@ article {
   padding-bottom: 20px;
   /* background-color: #F3F3F3; */
   margin-bottom: 10px;
+}
+
+.profile_contents {
+  margin-top: 30px;
+}
+
+.profile_contents p {
+  font-size: 13px;
+  margin-bottom: 1rem;
 }
 
 /* -------------------------------------------------------------------- */
@@ -475,17 +520,17 @@ article {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* worksページ---------------------------- */
+  /* works詳細ページ---------------------------- */
   .works_contents {
     flex-direction: column;
   }
 
-  article,
-  aside {
+  .works_contents article {
     width: 100%;
   }
 
-  aside {
+  .works_contents aside {
+    width: 100%;
     margin-top: 60px;
   }
 
@@ -581,27 +626,22 @@ article {
 
 
   /* プロフィールページ------------------------------------------------ */
-  .profile_layout_2>div {
+  .profile_layout_2 aside {
+    width: 100%;
+  }
+  
+  .profile_layout_2 article {
     width: 100%;
   }
 
-  .profile_img_caption img {
-    box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
-    margin-bottom: 20px;
+  .aside_profile {
+    margin-bottom: 2rem;
   }
 
-  .profile_img_caption .ttl {
-    font-size: 30px;
+  .aside_profile .ttl {
+    font-size: 20px;
     font-weight: 500;
     font-style: normal;
     padding-bottom: 10px;
-  }
-
-  .profile_img_caption {
-    margin-bottom: 40px;
-  }
-
-  .profile_layout_2 .profile_personal_info {
-    width: 100%;
   }
 }
