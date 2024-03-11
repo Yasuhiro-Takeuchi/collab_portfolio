@@ -21,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- lightbox.css読み込み -->
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 
 <body>
@@ -58,7 +60,7 @@
                         <p>メールアドレス : 21z1016@stu.meisei-u.ac.jp</p>
                         <p>githubアカウント : https://github.com/kento-012</p>
                     </aside>
-                    
+
                     <article class="article_profile">
                         <div class="profile_info">
                             <dl>
@@ -72,10 +74,10 @@
                                     <p>アドビ認定プロフェッショナル Illustrator 2020</p>
                                 </dd>
                                 <dt>使用言語：</dt>
-                                <dd>HTML CSS Processing C++</dd>
+                                <dd>Processing、HTML、CSS、Arduino</dd>
                             </dl>
                         </div>
-                        
+
                         <div class="profile_contents">
                             <!-- <p>一度ハマると長時間やり続ける性格。</p> -->
                             <p>学部では企画の立案やプレゼンの方法を学んでいます。</p>
@@ -83,9 +85,19 @@
                             <p>メディアの授業からプログラミングに興味を持ち始め、プログラミングで作品を作ることが多いです。</p>
                             <p>趣味は絵を描くことで、毎週通っている画塾ではデッサンをよくしています。</p>
                         </div>
+
+                        <div class="article_imgae_grid">
+                            <a href="images/profile_images/profile_01.jpg" data-lightbox="group"><img
+                                    src="images/profile_images/profile_01.jpg"></a>
+                            <a href="images/profile_images/profile_02.jpg" data-lightbox="group"><img
+                                    src="images/profile_images/profile_02.jpg"></a>
+                            <a href="images/profile_images/profile_03.jpg" data-lightbox="group"><img
+                                    src="images/profile_images/profile_03.jpg"></a>
+                        </div>
                     </article>
                 </div>
             </div>
+        </div>
     </main>
 
     <!-- フッター -->
@@ -95,6 +107,12 @@
         </div>
     </footer>
 
+    <!-- jquery読み込み -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- ligitbox読み込み -->
+    <script src="js/lightbox.js" type="text/javascript"></script>
+    <!-- jsの読み込み -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

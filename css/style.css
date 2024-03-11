@@ -20,6 +20,35 @@ a {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+img {
+  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
+}
+
+/* スクロール時のフェードイン---------------------- */
+.js_fade {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: opacity 1s,visibility 1s, transform 1s;
+}
+.scroll {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+/* 読み込み時のフェードイン */
+.js_lp {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: opacity 1s,visibility 1s, transform 1s;
+}
+.js_lp.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
 
 /* ヘッター ---------------------------------------*/
 header {
@@ -47,6 +76,7 @@ header>.container {
   /* height: 40px; */
   height: 80px;
   vertical-align: bottom;
+  box-shadow : none;
 }
 
 .area_logo_header a:hover {
@@ -107,7 +137,7 @@ header>.container {
 .sub_title h2 {
   font-size: 50px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   text-transform: uppercase;
 }
 
@@ -162,7 +192,6 @@ header>.container {
   width: 100%;
   /*スライダー内の画像を横幅100%に*/
   height: auto;
-  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
 }
 
 .slider p {
@@ -217,10 +246,6 @@ header>.container {
 
 
 /* プロフィール-------------------------------------- */
-.area_home_profile img {
-  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
-}
-
 /* 2分割レイアウト */
 .layout_2_div {
   display: flex;
@@ -274,7 +299,8 @@ footer>.container {
 .area_works_view>.container {
   height: 270px;
   /* コンテンツとの距離 */
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+  margin-bottom: 80px;
 }
 
 /* ページタイトル */
@@ -297,10 +323,6 @@ footer>.container {
 .grid a:hover {
   opacity: 0.5;
   transition: 0.3s;
-}
-
-.grid img {
-  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
 }
 
 /* 画像と文字の余白 */
@@ -335,21 +357,26 @@ footer>.container {
   margin-top: 5px;
 }
 
+.lead {
+  margin-bottom: 30px;
+}
+
 /* works詳細内の写真グリッド */
 .article_imgae_grid {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  padding-top: 3%;
+}
+f
+.article_imgae_grid img {
+  margin-bottom: 5px;
 }
 
-.article_imgae_grid .item {
-
-}
-
+/* 動画 */
 .video_test {
   width: 100%;
   aspect-ratio: 16 / 9;
+  margin-bottom: 20px;
 }
 
 .video_test iframe {
@@ -451,7 +478,6 @@ footer>.container {
 }
 
 .aside_profile img {
-  box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
   margin-bottom: 20px;
 }
 

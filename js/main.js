@@ -4,7 +4,7 @@ $('.slider').slick({
   slidesToScroll: 3,//1回のスクロールで3枚の写真を移動して見せる
   // dots: true,//下部ドットナビゲーションの表示
   autoplay: true,
-  speed: 3000,
+  speed: 2000,
   responsive: [
     {
       breakpoint: 769,//モニターの横幅が769px以下の見せ方
@@ -24,3 +24,21 @@ $('.slider').slick({
 });
 
 
+// スクロールのフェードイン
+$(function () {
+  $(window).scroll(function () {
+    $('.js_fade').each(function () {
+      var pos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > pos - windowHeight + 200) {
+        $(this).addClass('scroll');
+      }
+    });
+  });
+});
+
+//読み込み後のフェードイン
+$(window).on('load', function () {
+  $('.js_lp').addClass('open')
+});
