@@ -1,8 +1,9 @@
 @charset "utf-8";
 
-/* paddingの変数 */
+/* テキストの色 */
 :root {
-  --main_padding: 30px;
+  /* --text_color: #16ff8a; */
+  --text_color: black;
 }
 
 a {
@@ -23,6 +24,10 @@ a {
 img {
   box-shadow: 0px 16px 6px -8px rgba(16, 61, 72, .2);
 }
+
+h1,h2,h3,h4,h5,p{
+  color: var(--text_color);
+} 
 
 /* スクロール時のフェードイン---------------------- */
 .js_fade {
@@ -399,12 +404,14 @@ f
 
 .works_contents p {
   font-size: 13px;
+  font-weight: 300;
+  /* font-weight: 400; */
 }
 
 .ingenuity li {
   padding-bottom: 10px;
   font-size: 13px;
-  /* list-style: disc; */
+  font-weight: 300;
 }
 
 .works_contents span {
@@ -473,6 +480,7 @@ f
   justify-content: space-between;
 }
 
+/* aside */
 .profile_layout_2 aside {
   width: 35%;
 }
@@ -492,6 +500,7 @@ f
   font-size: 13px;
 }
 
+/* article */
 .profile_layout_2 article {
   width: 58%;
 }
